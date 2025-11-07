@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
   # AI-Powered Education Web App
 
@@ -9,3 +10,6 @@
 
   Run `npm run dev` to start the development server.
   
+=======
+# ai-career-advisor
+>>>>>>> e538849d5ad0c860aa9894569855ab10812e0746
