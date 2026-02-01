@@ -14,7 +14,9 @@ import {
 
 interface HowToStartPageProps {
   onNavigate: (page: string) => void;
+  
 }
+
 
 const steps = [
   {
@@ -27,14 +29,14 @@ const steps = [
     actionLabel: 'Complete Profile',
   },
   {
-    number: '2',
-    title: 'Review Your Roadmap',
-    description: 'Explore your AI-generated personalized learning path',
-    icon: BookOpen,
-    color: 'from-purple-500 to-pink-500',
-    action: 'roadmap',
-    actionLabel: 'View Roadmap',
-  },
+  number: '2',
+  title: 'Review Your Roadmap',
+  description: 'Explore your AI-generated personalized learning path',
+  icon: BookOpen,
+  color: 'from-purple-500 to-pink-500',
+  action: 'roadmap',
+  actionLabel: 'View Roadmap',
+},
   {
     number: '3',
     title: 'Browse Resources',

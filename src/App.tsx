@@ -2,15 +2,17 @@ import { useState } from 'react';
 import { Navigation } from './components/Navigation';
 import { LandingPage } from './components/LandingPage';
 import { LoginPage } from './components/LoginPage';
-import { FormFillingPage } from './components/FormFillingPage';
-import { RoadmapPage } from './components/RoadmapPage';
+import  FormFillingPage  from './components/FormFillingPage';
+import  RoadmapPage  from './components/RoadmapPage';
 import { HomePage } from './components/HomePage';
-import { ResourcesPage } from './components/ResourcesPage';
+import  ResourcesPage  from './components/ResourcesPage';
 import { HowToStartPage } from './components/HowToStartPage';
 import { DashboardPage } from './components/DashboardPage';
 import { AIMentorChatPage } from './components/AIMentorChatPage';
 import { AboutPage } from './components/AboutPage';
 import { Toaster } from './components/ui/sonner';
+
+
 
 type PageType =
   | 'landing'
@@ -39,13 +41,13 @@ export default function App() {
       case 'login':
         return <LoginPage onNavigate={handleNavigate} />;
       case 'form-filling':
-        return <FormFillingPage onNavigate={handleNavigate} />;
+        return <FormFillingPage />;
       case 'roadmap':
-        return <RoadmapPage onNavigate={handleNavigate} />;
+        return <RoadmapPage />;
       case 'home':
         return <HomePage onNavigate={handleNavigate} />;
       case 'resources':
-        return <ResourcesPage onNavigate={handleNavigate} />;
+        return <ResourcesPage />;
       case 'how-to-start':
         return <HowToStartPage onNavigate={handleNavigate} />;
       case 'dashboard':

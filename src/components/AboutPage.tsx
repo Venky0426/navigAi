@@ -182,14 +182,14 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
           </div>
         </motion.div>
 
-        {/* Team */}
+        {/* Team
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
           className="mb-16"
-        >
-          <h2 className="text-3xl text-center mb-8">Meet Our Team</h2>
+        > */}
+          {/* <h2 className="text-3xl text-center mb-8">Meet Our Team</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {team.map((member, index) => (
               <motion.div
@@ -197,8 +197,8 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.6 + index * 0.05 }}
-              >
-                <Card className="p-6 hover:shadow-xl transition-shadow">
+              > */}
+                {/* <Card className="p-6 hover:shadow-xl transition-shadow">
                   <ImageWithFallback
                     src={member.image}
                     alt={member.name}
@@ -211,7 +211,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Roadmap */}
         <motion.div

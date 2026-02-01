@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { ImageWithFallback } from './figma/ImageWithFallback';
@@ -26,7 +26,7 @@ const roles = [
     image: 'https://images.unsplash.com/photo-1659696928555-11a2769a4644?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc2NpZW50aXN0JTIwd29ya3NwYWNlfGVufDF8fHx8MTc2MjQ5NzY4NHww&ixlib=rb-4.1.0&q=80&w=1080',
   },
   {
-    title: 'Frontend Developer',
+    title: 'AI Enginerr',
     description: 'Build stunning user interfaces with React',
     icon: Rocket,
     gradient: 'from-purple-500 to-pink-500',
@@ -94,26 +94,72 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
           />
         </div>
 
+
+       <center> 
+             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 mb-6">
+              <Sparkles className="w-4 h-4 text-blue-600" />
+              <span className="text-sm text-blue-600">AI-Powered Career Navigation</span>
+            </div>
+        </center>  
+    
+
+
+
+          {/* Hero Image with Description */}
+{/* Hero Image with Description */}
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  className="flex flex-col sm:flex-row items-center gap-6 justify-center"
+>
+  {/* Reduced Image Block */}
+  <div
+    style={{
+      width: '600px',  // fixed small width
+      height: '300px', // fixed small height
+      borderRadius: '12px',
+      overflow: 'hidden',
+      boxShadow: '0 10px 20px rgba(0,0,0,0.15)',
+      flexShrink: 0,
+      position: 'relative',
+    }}
+  >
+    <ImageWithFallback
+      src="https://cdn.gamma.app/eoskw3mp648tqtk/627146f51dde445d83f037ce80519003/original/ai-mentor-guiding-student-with-career-roadmap-illu-HMrbOc1CFBVbHugBP193m1GF3Y0UB8.jpg"
+      alt="AI Technology"
+      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+    />
+    <div
+      style={{
+        position: 'absolute',
+        inset: 0,
+        background: 'linear-gradient(to top, rgba(0,0,0,0.2), transparent)',
+      }}
+    />
+  </div>
+
+
         <div className="max-w-6xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 mb-6">
-              <Sparkles className="w-4 h-4 text-blue-600" />
-              <span className="text-sm text-blue-600">AI-Powered Career Navigation</span>
-            </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl mb-6 bg-gradient-to-r from-[#667eea] to-[#764ba2] bg-clip-text text-transparent">
+            <h1 className="text-xxl md:text-6xl lg:text-7xl mb-6 bg-gradient-to-r from-[#667eea] to-[#764ba2] bg-clip-text text-transparent">
               AI that guides your
               <br />
               learning journey
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Discover trending tech roles, generate personalized AI learning roadmaps, and access
-              curated resources to accelerate your career growth
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          </motion.div>
+</div>
+</motion.div>
+
+<br>
+</br>
+<br>
+</br>
+   <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-[#667eea] to-[#764ba2] hover:opacity-90 shadow-lg shadow-purple-500/30"
@@ -125,25 +171,7 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
                 Learn More
               </Button>
             </div>
-          </motion.div>
 
-          {/* Hero Image */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-16 relative"
-          >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmdXR1cmlzdGljJTIwQUklMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc2MjQ1MDExMHww&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="AI Technology"
-                className="w-full h-[400px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-            </div>
-          </motion.div>
-        </div>
       </section>
 
       {/* Top Roles Section */}
