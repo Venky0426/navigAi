@@ -153,7 +153,7 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
             }}
           >
             <ImageWithFallback
-              src="https://cdn.gamma.app/eoskw3mp648tqtk/627146f51dde445d83f037ce80519003/original/ai-mentor-guiding-student-with-career-roadmap-illu-HMrbOc1CFBVbHugBP193m1GF3Y0UB8.jpg"
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
               alt="AI Mentor guiding student"
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
