@@ -193,12 +193,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <div className="space-y-4">
                   {recentActivities.map((activity, index) => (
                     <div key={index} className="flex gap-3">
-                      <div className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${
-                        activity.type === 'completed' ? 'bg-green-500' :
-                        activity.type === 'started' ? 'bg-blue-500' :
-                        activity.type === 'achievement' ? 'bg-yellow-500' :
-                        'bg-purple-500'
-                      }`} />
+                      <div className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${activity.type === 'completed' ? 'bg-green-500' :
+                          activity.type === 'started' ? 'bg-blue-500' :
+                            activity.type === 'achievement' ? 'bg-yellow-500' :
+                              'bg-purple-500'
+                        }`} />
                       <div className="flex-1 min-w-0">
                         <p className="text-sm">{activity.title}</p>
                         <p className="text-xs text-muted-foreground">{activity.time}</p>

@@ -20,24 +20,59 @@ interface LandingPageProps {
 const roles = [
   {
     title: 'Data Scientist',
-    description: 'Master ML, statistics, and data visualization',
+    description: 'ML, statistics, data analysis',
     icon: TrendingUp,
     gradient: 'from-blue-500 to-cyan-500',
     image: 'https://images.unsplash.com/photo-1659696928555-11a2769a4644?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc2NpZW50aXN0JTIwd29ya3NwYWNlfGVufDF8fHx8MTc2MjQ5NzY4NHww&ixlib=rb-4.1.0&q=80&w=1080',
   },
   {
-    title: 'AI Enginerr',
-    description: 'Build stunning user interfaces with React',
-    icon: Rocket,
+    title: 'AI Engineer',
+    description: 'Build AI models & applications',
+    icon: Brain,
     gradient: 'from-purple-500 to-pink-500',
     image: 'https://images.unsplash.com/photo-1489438497675-d1a8d6e0632e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wZXIlMjBjb2Rpbmd8ZW58MXx8fHwxNzYyNDk3Njg1fDA&ixlib=rb-4.1.0&q=80&w=1080',
   },
   {
     title: 'Cloud Engineer',
-    description: 'Design scalable cloud infrastructure',
-    icon: Brain,
+    description: 'AWS, Azure, scalable systems',
+    icon: Rocket,
     gradient: 'from-indigo-500 to-blue-500',
     image: 'https://images.unsplash.com/photo-1690627931320-16ac56eb2588?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbG91ZCUyMGNvbXB1dGluZyUyMG5ldHdvcmt8ZW58MXx8fHwxNzYyNDUwNTAyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+  },
+  {
+    title: 'Agentic AI Engineer',
+    description: 'Gen ai,LLMs,openAi,Multi Agents',
+    icon: Sparkles,
+    gradient: 'from-pink-500 to-orange-500',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+  },
+  {
+    title: 'Full Stack Developer',
+    description: 'Frontend + Backend development',
+    icon: Users,
+    gradient: 'from-green-500 to-emerald-500',
+    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+  },
+  {
+    title: 'DevOps Engineer',
+    description: 'CI/CD, Docker, Kubernetes',
+    icon: Target,
+    gradient: 'from-yellow-500 to-orange-500',
+    image: 'https://images.unsplash.com/photo-1605379399642-870262d3d051?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+  },
+  {
+    title: 'Cybersecurity Analyst',
+    description: 'Security, ethical hacking',
+    icon: Award,
+    gradient: 'from-red-500 to-pink-500',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+  },
+  {
+    title: 'Blockchain Developer',
+    description: 'Web3, smart contracts',
+    icon: Brain,
+    gradient: 'from-indigo-500 to-purple-500',
+    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
   },
 ];
 
@@ -52,19 +87,19 @@ const testimonials = [
     name: 'Sarah Chen',
     role: 'Data Scientist at Google',
     text: 'Navig.AI helped me transition from finance to tech in just 6 months. The AI-powered roadmap was spot-on!',
-    avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjI0MjcwMDd8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
   },
   {
     name: 'Michael Rodriguez',
     role: 'Frontend Developer at Meta',
     text: 'The personalized learning path saved me hundreds of hours. Best career decision I ever made.',
-    avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjI0MjcwMDd8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
   },
   {
     name: 'Priya Sharma',
     role: 'Cloud Engineer at AWS',
     text: 'Amazing platform! The AI mentor feature is like having a personal career coach available 24/7.',
-    avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjI0MjcwMDd8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
   },
 ];
 
@@ -94,72 +129,47 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
           />
         </div>
 
+        <div className="flex justify-center mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20">
+            <Sparkles className="w-4 h-4 text-blue-600" />
+            <span className="text-sm text-blue-600">AI-Powered Career Navigation</span>
+          </div>
+        </div>
 
-       <center> 
-             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 mb-6">
-              <Sparkles className="w-4 h-4 text-blue-600" />
-              <span className="text-sm text-blue-600">AI-Powered Career Navigation</span>
-            </div>
-        </center>  
-    
-
-
-
-          {/* Hero Image with Description */}
-{/* Hero Image with Description */}
-<motion.div
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
-  className="flex flex-col sm:flex-row items-center gap-6 justify-center"
->
-  {/* Reduced Image Block */}
-  <div
-    style={{
-      width: '600px',  // fixed small width
-      height: '300px', // fixed small height
-      borderRadius: '12px',
-      overflow: 'hidden',
-      boxShadow: '0 10px 20px rgba(0,0,0,0.15)',
-      flexShrink: 0,
-      position: 'relative',
-    }}
-  >
-    <ImageWithFallback
-      src="https://cdn.gamma.app/eoskw3mp648tqtk/627146f51dde445d83f037ce80519003/original/ai-mentor-guiding-student-with-career-roadmap-illu-HMrbOc1CFBVbHugBP193m1GF3Y0UB8.jpg"
-      alt="AI Technology"
-      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-    />
-    <div
-      style={{
-        position: 'absolute',
-        inset: 0,
-        background: 'linear-gradient(to top, rgba(0,0,0,0.2), transparent)',
-      }}
-    />
-  </div>
-
-
-        <div className="max-w-6xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+        {/* Hero Image with Description */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col lg:flex-row items-center gap-10 justify-center max-w-6xl mx-auto"
+        >
+          {/* Reduced Image Block */}
+          <div
+            className="rounded-xl overflow-hidden shadow-2xl flex-shrink-0 relative"
+            style={{
+              width: '100%',
+              maxWidth: '600px',
+              height: '350px',
+            }}
           >
-            <h1 className="text-xxl md:text-6xl lg:text-7xl mb-6 bg-gradient-to-r from-[#667eea] to-[#764ba2] bg-clip-text text-transparent">
+            <ImageWithFallback
+              src="https://cdn.gamma.app/eoskw3mp648tqtk/627146f51dde445d83f037ce80519003/original/ai-mentor-guiding-student-with-career-roadmap-illu-HMrbOc1CFBVbHugBP193m1GF3Y0UB8.jpg"
+              alt="AI Mentor guiding student"
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+          </div>
+
+          <div className="text-center lg:text-left">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl mb-6 bg-gradient-to-r from-[#667eea] to-[#764ba2] bg-clip-text text-transparent leading-tight">
               AI that guides your
               <br />
               learning journey
             </h1>
-          </motion.div>
-</div>
-</motion.div>
-
-<br>
-</br>
-<br>
-</br>
-   <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <p className="text-lg text-muted-foreground mb-8 max-w-md mx-auto lg:mx-0">
+              Get a personalized career roadmap, AI mentorship, and curated resources — all in one place.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-[#667eea] to-[#764ba2] hover:opacity-90 shadow-lg shadow-purple-500/30"
@@ -171,7 +181,8 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
                 Learn More
               </Button>
             </div>
-
+          </div>
+        </motion.div>
       </section>
 
       {/* Top Roles Section */}
@@ -189,7 +200,7 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {roles.map((role, index) => (
               <motion.div
                 key={role.title}
@@ -202,7 +213,7 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
                   className="group cursor-pointer overflow-hidden border-2 hover:border-transparent transition-all hover:shadow-xl hover:shadow-purple-500/20"
                   onClick={() => onNavigate('form-filling')}
                 >
-                  <div className="relative h-48 overflow-hidden">
+                  <div className="relative h-40 overflow-hidden">
                     <ImageWithFallback
                       src={role.image}
                       alt={role.title}
@@ -210,16 +221,16 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <div
-                      className={`absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br ${role.gradient} flex items-center justify-center`}
+                      className={`absolute top-4 right-4 w-10 h-10 rounded-full bg-gradient-to-br ${role.gradient} flex items-center justify-center`}
                     >
-                      <role.icon className="w-6 h-6 text-white" />
+                      <role.icon className="w-5 h-5 text-white" />
                     </div>
                   </div>
                   <div className="p-6">
-                    <h3 className="mb-2">{role.title}</h3>
-                    <p className="text-muted-foreground">{role.description}</p>
+                    <h3 className="mb-2 text-base font-semibold">{role.title}</h3>
+                    <p className="text-sm text-muted-foreground">{role.description}</p>
                     <div className="mt-4 flex items-center text-[#667eea] opacity-0 group-hover:opacity-100 transition-opacity">
-                      <span className="text-sm">Start Learning</span>
+                      <span className="text-xs">Start Learning</span>
                       <ChevronRight className="ml-1 w-4 h-4" />
                     </div>
                   </div>
@@ -256,10 +267,10 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
                 className="relative"
               >
                 <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#667eea] to-[#764ba2] text-white mb-4 text-xl">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#667eea] to-[#764ba2] text-white mb-4 text-xl font-bold">
                     {item.step}
                   </div>
-                  <h3 className="mb-2">{item.title}</h3>
+                  <h3 className="mb-2 font-semibold">{item.title}</h3>
                   <p className="text-muted-foreground">{item.description}</p>
                 </div>
                 {index < howItWorks.length - 1 && (
@@ -271,7 +282,7 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Why Choose Navig AI */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -280,37 +291,52 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl mb-4">Success Stories</h2>
-            <p className="text-muted-foreground">
-              Join thousands who've transformed their careers with Navig.AI
+            <h2 className="text-4xl mb-4 text-gray-900 font-bold">Why Choose Navig AI</h2>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              Stop guessing your career path. Get clarity, structure, and AI-powered guidance to reach your goals faster.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={testimonial.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Card className="p-6 hover:shadow-lg transition-shadow">
-                  <div className="flex items-center gap-4 mb-4">
-                    <ImageWithFallback
-                      src={testimonial.avatar}
-                      alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
-                    <div>
-                      <h4 className="text-sm">{testimonial.name}</h4>
-                      <p className="text-xs text-muted-foreground">{testimonial.role}</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-muted-foreground italic">"{testimonial.text}"</p>
-                </Card>
-              </motion.div>
-            ))}
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
+              <Card className="p-6 text-center hover:shadow-lg transition-all group border-0 bg-slate-50">
+                <div className="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-500 flex items-center justify-center shadow-lg shadow-purple-200">
+                  <Target className="text-white w-5 h-5" />
+                </div>
+                <h3 className="font-semibold mb-2">Structured Roadmap</h3>
+                <p className="text-sm text-muted-foreground">Clear step-by-step plan from beginner to job-ready level.</p>
+              </Card>
+            </motion.div>
+
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+              <Card className="p-6 text-center hover:shadow-lg transition-all group border-0 bg-slate-50">
+                <div className="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-blue-200">
+                  <TrendingUp className="text-white w-5 h-5" />
+                </div>
+                <h3 className="font-semibold mb-2">Progress Tracking</h3>
+                <p className="text-sm text-muted-foreground">Track your growth and stay consistent with measurable progress.</p>
+              </Card>
+            </motion.div>
+
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
+              <Card className="p-6 text-center hover:shadow-lg transition-all group border-0 bg-slate-50">
+                <div className="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-pink-500 to-purple-500 flex items-center justify-center shadow-lg shadow-pink-200">
+                  <Brain className="text-white w-5 h-5" />
+                </div>
+                <h3 className="font-semibold mb-2">AI Mentor</h3>
+                <p className="text-sm text-muted-foreground">Get smart guidance like a personal mentor anytime.</p>
+              </Card>
+            </motion.div>
+
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
+              <Card className="p-6 text-center hover:shadow-lg transition-all group border-0 bg-slate-50">
+                <div className="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center shadow-lg shadow-orange-200">
+                  <Sparkles className="text-white w-5 h-5" />
+                </div>
+                <h3 className="font-semibold mb-2">Career Clarity</h3>
+                <p className="text-sm text-muted-foreground">Confused about what to learn? We give you clear direction.</p>
+              </Card>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -323,13 +349,13 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl mb-6">Ready to Transform Your Career?</h2>
+            <h2 className="text-4xl mb-6 font-bold">Ready to Transform Your Career?</h2>
             <p className="text-xl mb-8 text-white/90">
               Join thousands of learners who are already on their path to success
             </p>
             <Button
               size="lg"
-              className="bg-white text-[#667eea] hover:bg-white/90"
+              className="bg-white text-[#667eea] hover:bg-white/90 font-bold px-8 shadow-xl"
               onClick={() => onNavigate('form-filling')}
             >
               Start Your Journey Today
