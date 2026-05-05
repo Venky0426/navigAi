@@ -64,8 +64,9 @@ const FormFillingPage = () => {
     setError(null);
 
     try {
+      const baseUrl = import.meta.env.VITE_API_URL || 'https://navigai-9z9f.onrender.com';
       const response = await axios.post(
-        "https://navigai-9z9f.onrender.com/generate-roadmap",
+        `${baseUrl}/generate-roadmap`,
         {
           current_year: formData.currentYear,
           passout_year: formData.passoutYear,
