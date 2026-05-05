@@ -65,7 +65,7 @@ const FormFillingPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/generate-roadmap",
+        "https://navigai-9z9f.onrender.com/generate-roadmap",
         {
           current_year: formData.currentYear,
           passout_year: formData.passoutYear,
