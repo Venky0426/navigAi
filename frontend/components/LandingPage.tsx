@@ -153,7 +153,7 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
             }}
           >
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+              src="/navig.png"
               alt="AI Mentor guiding student"
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
